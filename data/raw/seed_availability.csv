@@ -1,0 +1,50 @@
+district,variety_id,available,supplier,availability_note
+Kasese,v001,yes,Local seed dealer,Available in most trading centres
+Kasese,v002,yes,Agro-input shop,Available but requires higher input budget
+Kasese,v003,no,Regional supplier,Not confirmed locally this season
+Kasese,v004,yes,Cooperative,Available in limited quantities
+Kasese,v005,yes,Local seed dealer,Available
+Kasese,v006,no,Regional supplier,Not adapted or commonly stocked
+Mbale,v001,yes,Cooperative,Available
+Mbale,v002,yes,Agro-input shop,Available
+Mbale,v003,yes,Agro-input shop,Available
+Mbale,v004,yes,Cooperative,Available
+Mbale,v005,no,Local seed dealer,Not prioritized in this zone
+Mbale,v006,yes,Regional supplier,Available for highland farmers
+Gulu,v001,yes,Local seed dealer,Available
+Gulu,v002,yes,Agro-input shop,Available
+Gulu,v003,no,Regional supplier,Limited adaptation and supply
+Gulu,v004,yes,Cooperative,Available
+Gulu,v005,yes,Local seed dealer,Available
+Gulu,v006,no,Regional supplier,Not stocked
+Mbarara,v001,yes,Cooperative,Available
+Mbarara,v002,yes,Agro-input shop,Available
+Mbarara,v003,yes,Agro-input shop,Available
+Mbarara,v004,yes,Cooperative,Available
+Mbarara,v005,no,Local seed dealer,Limited demand
+Mbarara,v006,yes,Regional supplier,Available
+Soroti,v001,yes,Local seed dealer,Available
+Soroti,v002,yes,Agro-input shop,Available but costly
+Soroti,v003,no,Regional supplier,Not recommended for dry zone
+Soroti,v004,yes,Cooperative,Available
+Soroti,v005,yes,Local seed dealer,Available
+Soroti,v006,no,Regional supplier,Not stocked
+Masaka,v001,yes,Cooperative,Available
+Masaka,v002,yes,Agro-input shop,Available
+Masaka,v003,yes,Agro-input shop,Available
+Masaka,v004,yes,Cooperative,Available
+Masaka,v005,yes,Local seed dealer,Available
+Masaka,v006,no,Regional supplier,Not commonly stocked
+Hoima,v001,yes,Local seed dealer,Available
+Hoima,v002,yes,Agro-input shop,Available
+Hoima,v003,yes,Regional supplier,Available with order
+Hoima,v004,yes,Cooperative,Available
+Hoima,v005,yes,Local seed dealer,Available
+Hoima,v006,no,Regional supplier,Not stocked
+Arua,v001,yes,Local seed dealer,Available
+Arua,v002,yes,Agro-input shop,Available
+Arua,v003,no,Regional supplier,Limited adaptation and supply
+Arua,v004,yes,Cooperative,Available
+Arua,v005,yes,Local seed dealer,Available
+Arua,v006,no,Regional supplier,Not stocked
+

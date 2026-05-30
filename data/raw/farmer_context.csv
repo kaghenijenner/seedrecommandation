@@ -1,0 +1,10 @@
+case_id,district,crop,season,farm_size_acres,input_access,production_goal,resource_level,gender,market_preference
+c001,Kasese,maize,2024A,2.0,medium,food_and_market,medium,female,medium
+c002,Mbale,maize,2024A,1.5,high,market,high,male,high
+c003,Gulu,maize,2024A,3.0,low,food_security,low,female,medium
+c004,Mbarara,maize,2024A,2.2,medium,market,medium,male,high
+c005,Soroti,maize,2024A,1.0,low,food_security,low,female,low
+c006,Masaka,maize,2024A,2.8,high,food_and_market,high,male,high
+c007,Hoima,maize,2024A,1.7,medium,food_security,medium,female,medium
+c008,Arua,maize,2024A,2.5,low,food_and_market,low,male,medium
+

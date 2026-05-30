@@ -1,0 +1,9 @@
+agro_ecological_zone,resource_level,cases,rows,suitable_rate,mean_suitability
+Eastern Drylands,low,1,6,0.8333333333333334,85.68
+Eastern Highlands,high,1,6,1.0,100.0
+Lake Victoria Crescent,high,1,6,1.0,100.0
+Northern Farming System,low,1,6,0.8333333333333334,89.24833333333333
+South Western Highlands,medium,1,6,1.0,99.99833333333333
+West Nile,low,1,6,1.0,94.03000000000002
+Western Mid-altitude,medium,1,6,1.0,95.95166666666667
+Western Rwenzori,medium,1,6,0.8333333333333334,94.63

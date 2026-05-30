@@ -1,0 +1,8 @@
+variety_id,variety_name,crop,maturity_days,drought_tolerance,disease_resistance,yield_potential_t_ha,min_rainfall_mm,max_rainfall_mm,min_altitude_m,max_altitude_m,input_requirement,notes
+v001,Longe 5,maize,120,medium,medium,4.2,700,1200,900,1800,medium,Open pollinated variety with broad adaptation
+v002,Longe 10H,maize,115,high,high,5.8,650,1150,900,1700,high,Hybrid with good drought tolerance
+v003,Longe 7H,maize,130,medium,high,6.0,800,1300,1000,1900,high,Hybrid suited to higher rainfall zones
+v004,NARO Maize 57,maize,105,high,medium,4.8,550,1050,800,1600,medium,Early maturing and drought tolerant
+v005,MM3,maize,95,high,low,3.7,500,950,700,1500,low,Early maturing option for short rainfall windows
+v006,H520,maize,140,low,high,6.5,900,1500,1200,2200,high,Performs best in high-potential cooler zones
+

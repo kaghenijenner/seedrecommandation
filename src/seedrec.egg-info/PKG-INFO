@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: seedrec
+Version: 0.1.0
+Summary: Explainable seed variety recommendation prototype for Ugandan smallholder farming
+Requires-Python: >=3.10

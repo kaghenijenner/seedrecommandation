@@ -1,0 +1,10 @@
+district,agro_ecological_zone,zardi_zone,season,mean_rainfall_mm,mean_temperature_c,drought_index,season_length_days,soil_type,soil_ph,organic_matter_pct,drainage,elevation_m,ndvi,market_access
+Kasese,Western Rwenzori,Western,2024A,780,24.1,0.42,108,sandy_loam,6.1,2.1,moderate,1080,0.58,medium
+Mbale,Eastern Highlands,Eastern,2024A,1120,21.3,0.18,132,loam,6.4,3.2,good,1350,0.71,high
+Gulu,Northern Farming System,Northern,2024A,690,26.7,0.51,101,sandy,5.8,1.8,moderate,1040,0.49,medium
+Mbarara,South Western Highlands,Western,2024A,860,22.5,0.33,116,clay_loam,6.0,2.7,good,1420,0.63,high
+Soroti,Eastern Drylands,Eastern,2024A,610,27.2,0.58,96,sandy_loam,5.7,1.6,poor,1120,0.44,low
+Masaka,Lake Victoria Crescent,Central,2024A,980,23.0,0.25,124,loam,6.3,2.9,good,1180,0.68,high
+Hoima,Western Mid-altitude,Western,2024A,820,25.2,0.37,112,sandy_clay_loam,6.2,2.4,moderate,1130,0.61,medium
+Arua,West Nile,West Nile,2024A,730,26.0,0.46,104,sandy_loam,5.9,2.0,moderate,1210,0.53,medium
+

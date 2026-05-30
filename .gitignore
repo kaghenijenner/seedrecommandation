@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/
+models/*.joblib
+models/*.pkl
+reports/*.png
+reports/*.html
+data/processed/*.csv
+!data/processed/.gitkeep
+

@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/seedrec/__init__.py
+src/seedrec/config.py
+src/seedrec/data.py
+src/seedrec/evaluate.py
+src/seedrec/explain.py
+src/seedrec/model.py
+src/seedrec/pipeline.py
+src/seedrec/recommend.py
+src/seedrec.egg-info/PKG-INFO
+src/seedrec.egg-info/SOURCES.txt
+src/seedrec.egg-info/dependency_links.txt
+src/seedrec.egg-info/top_level.txt
+tests/test_recommendations.py
