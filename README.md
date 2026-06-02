@@ -31,16 +31,22 @@ Each modelling row represents:
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python -m pip install -e .
+.venv/bin/python -m seedrec.prepare_real_data
 .venv/bin/python -m seedrec.pipeline
 streamlit run app/streamlit_app.py
 ```
 
 If `xgboost`, `shap`, or `lime` are unavailable in your environment, the pipeline falls back to scikit-learn models and built-in feature-contribution explanations where possible.
 
+The `datasets` folder is treated as the verified source bundle. Run `python -m seedrec.prepare_real_data` whenever those source files change; it rebuilds the project inputs in `data/raw`.
+
+If a `missingdatasets` folder exists, the preparation step also uses supported enrichment files such as district NDVI, NASA-style climate/weather summaries, SoilGrids values when populated, and UNPS district welfare/resource context.
+
 ## Main Outputs
 
 Running the pipeline creates:
 
+- `data/raw/*.csv` real project inputs generated from `datasets`
 - `data/processed/modelling_dataset.csv`
 - `models/seedrec_pipeline.joblib`
 - `reports/evaluation_metrics.json`
@@ -50,6 +56,11 @@ Running the pipeline creates:
 ## Success Criteria
 
 - The system ranks candidate maize varieties for a district/season/farmer context.
-- Every recommendation includes a suitability score, rank, confidence level, drivers, cautions, and availability note.
+- The main recommendation table stays simple for non-technical users and shows only the rank and variety name by default.
+- Detailed scoring, confidence, drivers, cautions, and availability notes appear in the explanation section for each variety.
 - The evaluation covers predictive performance, ranking quality, and explanation plausibility.
-- The implementation can be demonstrated with anonymized data and later replaced with real Ugandan datasets.
+- The implementation can be demonstrated with verified Uganda district/crop data while clearly documenting missing variety-level trial outcomes.
+
+## Data Status
+
+The synthetic demo data has been replaced with transformed real inputs from the `datasets` folder. See `docs/REAL_DATA_INTEGRATION.md` for selected files, limitations, and missing data sources.

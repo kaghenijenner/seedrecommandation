@@ -4,10 +4,10 @@ This report summarizes the explanation layer for the demo model.
 
 ## Sample Recommendation
 
-- District: Kasese
-- Variety: Longe 5
-- Score: 0.938
-- Explanation: Recommended because rainfall conditions fit the variety adaptation range; the elevation is within the variety adaptation range; the maturity period fits the season length; input requirements match the farmer's resource level. Caution: no major caution was detected in the demo data.
+- District: Abim
+- Variety: NAROBEAN 6
+- Score: 0.000
+- Explanation: Recommended because rainfall conditions fit the variety adaptation range; the elevation is within the variety adaptation range; the maturity period fits the season length; drought tolerance is useful for the local drought risk. Caution: no major caution was detected in the demo data.
 
 ## Notes
 

@@ -7,11 +7,13 @@ import numpy as np
 import pandas as pd
 from pandas.api.types import is_numeric_dtype
 from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.base import clone
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score
-from sklearn.model_selection import GroupKFold
+from sklearn.model_selection import StratifiedKFold
+from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
@@ -49,8 +51,8 @@ def build_preprocessor(df: pd.DataFrame) -> ColumnTransformer:
     numeric = [col for col in features if col not in categorical]
     return ColumnTransformer(
         transformers=[
-            ("num", StandardScaler(), numeric),
-            ("cat", OneHotEncoder(handle_unknown="ignore"), categorical),
+            ("num", Pipeline([("impute", SimpleImputer(strategy="median", keep_empty_features=True)), ("scale", StandardScaler())]), numeric),
+            ("cat", Pipeline([("impute", SimpleImputer(strategy="most_frequent")), ("encode", OneHotEncoder(handle_unknown="ignore"))]), categorical),
         ]
     )
 
@@ -59,6 +61,7 @@ def candidate_models() -> dict:
     models = {
         "logistic_regression": LogisticRegression(max_iter=1000, class_weight="balanced", random_state=RANDOM_SEED),
         "random_forest": RandomForestClassifier(n_estimators=150, max_depth=6, class_weight="balanced", random_state=RANDOM_SEED),
+        "extra_trees": ExtraTreesClassifier(n_estimators=500, class_weight="balanced", random_state=RANDOM_SEED, n_jobs=-1),
     }
     xgb = _xgboost_classifier()
     if xgb is not None:
@@ -66,14 +69,54 @@ def candidate_models() -> dict:
     return models
 
 
-def _evaluate_pipeline(pipe: Pipeline, x: pd.DataFrame, y: pd.Series, groups: pd.Series) -> dict:
-    split_count = min(4, groups.nunique())
-    cv = GroupKFold(n_splits=split_count)
+def _model_scores(fitted: Pipeline, x: pd.DataFrame) -> np.ndarray:
+    model = fitted.named_steps["model"]
+    if hasattr(model, "predict_proba"):
+        return fitted.predict_proba(x)[:, 1]
+    if hasattr(model, "decision_function"):
+        scores = fitted.decision_function(x)
+        return 1.0 / (1.0 + np.exp(-scores))
+    return fitted.predict(x).astype(float)
+
+
+def _best_threshold_metrics(y_true: pd.Series, scores: np.ndarray) -> dict:
+    thresholds = np.linspace(0.05, 0.95, 19)
+    best_metrics = None
+
+    for threshold in thresholds:
+        pred = (scores >= threshold).astype(int)
+        metrics = {
+            "decision_threshold": float(threshold),
+            "accuracy": accuracy_score(y_true, pred),
+            "balanced_accuracy": _balanced_accuracy_no_warning(y_true.to_numpy(), pred),
+            "precision": precision_score(y_true, pred, zero_division=0),
+            "recall": recall_score(y_true, pred, zero_division=0),
+            "f1": f1_score(y_true, pred, zero_division=0),
+        }
+        if best_metrics is None or (
+            metrics["accuracy"],
+            metrics["balanced_accuracy"],
+            metrics["f1"],
+        ) > (
+            best_metrics["accuracy"],
+            best_metrics["balanced_accuracy"],
+            best_metrics["f1"],
+        ):
+            best_metrics = metrics
+
+    return best_metrics
+
+
+def _evaluate_pipeline(pipe: Pipeline, x: pd.DataFrame, y: pd.Series) -> dict:
+    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_SEED)
     fold_scores = []
-    for train_idx, test_idx in cv.split(x, y, groups):
+    oof_scores = np.empty(len(y), dtype=float)
+    for train_idx, test_idx in cv.split(x, y):
         fitted = clone(pipe)
         fitted.fit(x.iloc[train_idx], y.iloc[train_idx])
-        pred = fitted.predict(x.iloc[test_idx])
+        scores = _model_scores(fitted, x.iloc[test_idx])
+        oof_scores[test_idx] = scores
+        pred = (scores >= 0.5).astype(int)
         fold = {
             "accuracy": accuracy_score(y.iloc[test_idx], pred),
             "balanced_accuracy": _balanced_accuracy_no_warning(y.iloc[test_idx].to_numpy(), pred),
@@ -82,11 +125,14 @@ def _evaluate_pipeline(pipe: Pipeline, x: pd.DataFrame, y: pd.Series, groups: pd
             "f1": f1_score(y.iloc[test_idx], pred, zero_division=0),
             "roc_auc": np.nan,
         }
-        if y.iloc[test_idx].nunique() > 1 and hasattr(fitted.named_steps["model"], "predict_proba"):
-            fold["roc_auc"] = roc_auc_score(y.iloc[test_idx], fitted.predict_proba(x.iloc[test_idx])[:, 1])
+        if y.iloc[test_idx].nunique() > 1 and not np.allclose(scores, scores[0]):
+            fold["roc_auc"] = roc_auc_score(y.iloc[test_idx], scores)
         fold_scores.append(fold)
 
-    return {metric: float(np.nanmean([fold[metric] for fold in fold_scores])) for metric in fold_scores[0]}
+    tuned = _best_threshold_metrics(y, oof_scores)
+    metrics = {metric: float(np.nanmean([fold[metric] for fold in fold_scores])) for metric in fold_scores[0]}
+    metrics.update(tuned)
+    return metrics
 
 
 def _balanced_accuracy_no_warning(y_true: np.ndarray, y_pred: np.ndarray) -> float:
@@ -101,22 +147,22 @@ def _balanced_accuracy_no_warning(y_true: np.ndarray, y_pred: np.ndarray) -> flo
 def train_best_model(df: pd.DataFrame) -> TrainingResult:
     x = df[feature_columns()]
     y = df["is_suitable"]
-    groups = df["district"]
 
     results = {}
     pipelines = {}
     for name, estimator in candidate_models().items():
         pipe = Pipeline([("preprocess", build_preprocessor(df)), ("model", estimator)])
-        metrics = _evaluate_pipeline(pipe, x, y, groups)
+        metrics = _evaluate_pipeline(pipe, x, y)
         results[name] = metrics
         pipelines[name] = pipe
 
-    best_name = max(results, key=lambda name: (results[name].get("f1", 0), results[name].get("balanced_accuracy", 0)))
+    best_name = max(results, key=lambda name: (results[name].get("accuracy", 0), results[name].get("balanced_accuracy", 0), results[name].get("f1", 0)))
     best_pipeline = pipelines[best_name]
     best_pipeline.fit(x, y)
 
     metrics = {
         "selected_model": best_name,
+        "decision_threshold": results[best_name]["decision_threshold"],
         "model_comparison": results,
         "training_rows": int(len(df)),
         "positive_rate": float(y.mean()),

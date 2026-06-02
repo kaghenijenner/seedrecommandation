@@ -1,50 +1,577 @@
 district,variety_id,available,supplier,availability_note
-Kasese,v001,yes,Local seed dealer,Available in most trading centres
-Kasese,v002,yes,Agro-input shop,Available but requires higher input budget
-Kasese,v003,no,Regional supplier,Not confirmed locally this season
-Kasese,v004,yes,Cooperative,Available in limited quantities
-Kasese,v005,yes,Local seed dealer,Available
-Kasese,v006,no,Regional supplier,Not adapted or commonly stocked
-Mbale,v001,yes,Cooperative,Available
-Mbale,v002,yes,Agro-input shop,Available
-Mbale,v003,yes,Agro-input shop,Available
-Mbale,v004,yes,Cooperative,Available
-Mbale,v005,no,Local seed dealer,Not prioritized in this zone
-Mbale,v006,yes,Regional supplier,Available for highland farmers
-Gulu,v001,yes,Local seed dealer,Available
-Gulu,v002,yes,Agro-input shop,Available
-Gulu,v003,no,Regional supplier,Limited adaptation and supply
-Gulu,v004,yes,Cooperative,Available
-Gulu,v005,yes,Local seed dealer,Available
-Gulu,v006,no,Regional supplier,Not stocked
-Mbarara,v001,yes,Cooperative,Available
-Mbarara,v002,yes,Agro-input shop,Available
-Mbarara,v003,yes,Agro-input shop,Available
-Mbarara,v004,yes,Cooperative,Available
-Mbarara,v005,no,Local seed dealer,Limited demand
-Mbarara,v006,yes,Regional supplier,Available
-Soroti,v001,yes,Local seed dealer,Available
-Soroti,v002,yes,Agro-input shop,Available but costly
-Soroti,v003,no,Regional supplier,Not recommended for dry zone
-Soroti,v004,yes,Cooperative,Available
-Soroti,v005,yes,Local seed dealer,Available
-Soroti,v006,no,Regional supplier,Not stocked
-Masaka,v001,yes,Cooperative,Available
-Masaka,v002,yes,Agro-input shop,Available
-Masaka,v003,yes,Agro-input shop,Available
-Masaka,v004,yes,Cooperative,Available
-Masaka,v005,yes,Local seed dealer,Available
-Masaka,v006,no,Regional supplier,Not commonly stocked
-Hoima,v001,yes,Local seed dealer,Available
-Hoima,v002,yes,Agro-input shop,Available
-Hoima,v003,yes,Regional supplier,Available with order
-Hoima,v004,yes,Cooperative,Available
-Hoima,v005,yes,Local seed dealer,Available
-Hoima,v006,no,Regional supplier,Not stocked
-Arua,v001,yes,Local seed dealer,Available
-Arua,v002,yes,Agro-input shop,Available
-Arua,v003,no,Regional supplier,Limited adaptation and supply
-Arua,v004,yes,Cooperative,Available
-Arua,v005,yes,Local seed dealer,Available
-Arua,v006,no,Regional supplier,Not stocked
-
+Kalangala,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kalangala,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kampala,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kampala,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kayunga,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kayunga,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kiboga,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kiboga,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Luwero,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Luwero,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Lyantonde,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Lyantonde,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Masaka,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Masaka,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Mityana,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Mityana,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Mpigi,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Mpigi,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Mubende,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Mubende,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Mukono,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Mukono,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Nakaseke,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Nakaseke,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Nakasongola,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Nakasongola,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Rakai,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Rakai,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Sembabule,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Sembabule,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Wakiso,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Wakiso,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Amuria,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Amuria,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Budaka,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Budaka,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Bududa,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Bududa,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Bugiri,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Bugiri,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Bukedea,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Bukedea,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Bukwo,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Bukwo,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Busia,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Busia,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Butaleja,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Butaleja,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Iganga,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Iganga,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Jinja,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Jinja,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kaberamaido,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kaberamaido,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kaliro,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kaliro,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kamuli,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kamuli,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kapchorwa,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kapchorwa,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kumi,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kumi,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Manafwa,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Manafwa,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Mayuge,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Mayuge,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Mbale,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Mbale,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Namutumba,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Namutumba,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Pallisa,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Pallisa,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Sironko,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Sironko,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Soroti,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Soroti,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Tororo,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Tororo,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Abim,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Abim,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Adjumani,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Adjumani,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Amolatar,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Amolatar,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Amuru,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Amuru,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Apac,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Apac,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Arua,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Arua,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Dokolo,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Dokolo,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Gulu,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Gulu,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kaabong,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kaabong,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kitgum,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kitgum,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Koboko,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Koboko,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kotido,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kotido,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Lira,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Lira,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Moroto,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Moroto,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Moyo,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Moyo,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Nakapiripirit,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Nakapiripirit,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Nebbi,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Nebbi,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Nyadri,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Nyadri,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Oyam,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Oyam,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Pader,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Pader,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Yumbe,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Yumbe,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Buliisa,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Buliisa,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Bundibugyo,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Bundibugyo,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Bushenyi,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Bushenyi,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Hoima,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Hoima,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Ibanda,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Ibanda,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Isingiro,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Isingiro,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kabale,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kabale,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kabarole,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kabarole,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kamwenge,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kamwenge,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kanungu,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kanungu,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kasese,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kasese,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kibaale,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kibaale,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kiruhura,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kiruhura,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kisoro,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kisoro,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kyenjojo,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Kyenjojo,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Masindi,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Masindi,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Mbarara,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Mbarara,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Ntungamo,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Ntungamo,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Rukungiri,NARO/2019/BEN/037,yes,Pearl Seeds,NARO holdings; Pearl Seeds; CEDO Seeds; Equator Seeds; Kyazanga Farmers’ Cooperative Society
+Rukungiri,NARO/2019/BEN/038,yes,Pearl Seeds; Syova; Savana Seeds,Equator Seeds
+Kampala,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kampala,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kayunga,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kayunga,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kiboga,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kiboga,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Luwero,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Luwero,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Lyantonde,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Lyantonde,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Masaka,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Masaka,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mityana,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mityana,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mpigi,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mpigi,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mubende,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mubende,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mukono,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mukono,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nakaseke,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nakaseke,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nakasongola,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nakasongola,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Rakai,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Rakai,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Sembabule,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Sembabule,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Wakiso,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Wakiso,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Amuria,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Amuria,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Budaka,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Budaka,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bududa,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bududa,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bugiri,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bugiri,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bukedea,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bukedea,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Busia,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Busia,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Butaleja,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Butaleja,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Iganga,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Iganga,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Jinja,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Jinja,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kaberamaido,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kaberamaido,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kaliro,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kaliro,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kamuli,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kamuli,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kapchorwa,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kapchorwa,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Katakwi,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Katakwi,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kumi,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kumi,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Manafwa,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Manafwa,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mayuge,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mayuge,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mbale,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mbale,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Namutumba,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Namutumba,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Pallisa,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Pallisa,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Sironko,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Sironko,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Soroti,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Soroti,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Tororo,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Tororo,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Abim,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Abim,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Adjumani,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Adjumani,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Amolatar,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Amolatar,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Amuru,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Amuru,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Apac,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Apac,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Arua,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Arua,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Dokolo,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Dokolo,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Gulu,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Gulu,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kaabong,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kaabong,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kitgum,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kitgum,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Koboko,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Koboko,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kotido,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kotido,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Lira,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Lira,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Moroto,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Moroto,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Moyo,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Moyo,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nakapiripirit,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nakapiripirit,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nebbi,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nebbi,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nyadri,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Nyadri,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Oyam,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Oyam,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Pader,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Pader,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Yumbe,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Yumbe,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Buliisa,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Buliisa,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bundibugyo,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bundibugyo,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bushenyi,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Bushenyi,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Hoima,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Hoima,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Ibanda,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Ibanda,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Isingiro,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Isingiro,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kabale,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kabale,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kabarole,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kabarole,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kamwenge,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kamwenge,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kanungu,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kanungu,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kasese,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kasese,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kibaale,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kibaale,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kiruhura,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kiruhura,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kyenjojo,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kyenjojo,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Masindi,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Masindi,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mbarara,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Mbarara,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Ntungamo,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Ntungamo,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Rukungiri,NARO/2019/GNT/022,yes,FICA; Pearl seeds; Syova seeds; NASECO; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Rukungiri,NARO/2019/GNT/023,yes,FICA; NASECO; Syova; Century Seeds,NULSBA; Equator Seed Ltd; NARO Holdings foundation seed
+Kalangala,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kalangala,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kampala,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kampala,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kayunga,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kayunga,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kiboga,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kiboga,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Luwero,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Luwero,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Lyantonde,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Lyantonde,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Masaka,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Masaka,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Mityana,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Mityana,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Mpigi,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Mpigi,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Mubende,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Mubende,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Mukono,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Mukono,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Nakaseke,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Nakaseke,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Nakasongola,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Nakasongola,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Rakai,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Rakai,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Sembabule,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Sembabule,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Wakiso,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Wakiso,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Amuria,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Amuria,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Budaka,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Budaka,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Bududa,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Bududa,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Bugiri,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Bugiri,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Bukedea,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Bukedea,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Bukwo,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Bukwo,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Busia,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Busia,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Butaleja,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Butaleja,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Iganga,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Iganga,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Jinja,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Jinja,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kaberamaido,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kaberamaido,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kaliro,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kaliro,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kamuli,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kamuli,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kapchorwa,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kapchorwa,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Katakwi,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Katakwi,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kumi,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kumi,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Manafwa,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Manafwa,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Mayuge,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Mayuge,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Mbale,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Mbale,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Namutumba,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Namutumba,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Pallisa,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Pallisa,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Sironko,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Sironko,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Soroti,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Soroti,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Tororo,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Tororo,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Abim,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Abim,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Adjumani,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Adjumani,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Amolatar,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Amolatar,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Amuru,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Amuru,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Apac,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Apac,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Arua,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Arua,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Dokolo,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Dokolo,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Gulu,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Gulu,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kaabong,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kaabong,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kitgum,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kitgum,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Koboko,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Koboko,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kotido,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kotido,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Lira,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Lira,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Moroto,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Moroto,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Moyo,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Moyo,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Nakapiripirit,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Nakapiripirit,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Nebbi,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Nebbi,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Nyadri,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Nyadri,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Oyam,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Oyam,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Pader,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Pader,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Yumbe,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Yumbe,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Buliisa,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Buliisa,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Bundibugyo,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Bundibugyo,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Bushenyi,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Bushenyi,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Hoima,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Hoima,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Ibanda,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Ibanda,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Isingiro,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Isingiro,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kabale,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kabale,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kabarole,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kabarole,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kamwenge,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kamwenge,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kanungu,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kanungu,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kasese,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kasese,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kibaale,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kibaale,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kiruhura,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kiruhura,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kisoro,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kisoro,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kyenjojo,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Kyenjojo,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Masindi,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Masindi,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Mbarara,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Mbarara,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Ntungamo,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Ntungamo,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Rukungiri,NARO/2019/MAZ/041,yes,Advanta Seed International,Advanta Seeds Limited
+Rukungiri,NARO/2019/MAZ/042,yes,FICA; Equator Seeds; Pearl Seeds; Okeba Seeds,Masindi Seed Company Ltd (MASCO)
+Kayunga,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kayunga,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kiboga,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kiboga,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Luwero,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Luwero,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Mpigi,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Mpigi,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Mukono,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Mukono,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Nakaseke,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Nakaseke,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Wakiso,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Wakiso,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Amuria,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Amuria,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Budaka,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Budaka,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Bugiri,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Bugiri,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Bukedea,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Bukedea,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Busia,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Busia,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Butaleja,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Butaleja,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Iganga,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Iganga,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Jinja,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Jinja,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kaberamaido,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kaberamaido,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kaliro,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kaliro,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kamuli,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kamuli,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Katakwi,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Katakwi,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kumi,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kumi,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Mayuge,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Mayuge,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Mbale,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Mbale,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Namutumba,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Namutumba,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Pallisa,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Pallisa,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Sironko,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Sironko,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Soroti,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Soroti,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Tororo,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Tororo,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Adjumani,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Adjumani,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Amuru,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Amuru,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Apac,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Apac,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Arua,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Arua,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Dokolo,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Dokolo,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Gulu,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Gulu,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kitgum,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kitgum,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Koboko,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Koboko,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Lira,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Lira,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Moyo,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Moyo,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Nebbi,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Nebbi,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Nyadri,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Nyadri,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Oyam,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Oyam,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Pader,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Pader,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Yumbe,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Yumbe,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Bundibugyo,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Bundibugyo,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Hoima,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Hoima,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Ibanda,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Ibanda,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kabarole,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kabarole,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kamwenge,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kamwenge,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kanungu,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kanungu,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kasese,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kasese,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kibaale,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Kibaale,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Masindi,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Masindi,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Rukungiri,NARO/2019/RIC/022,yes,FICA; Savana Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers
+Rukungiri,NARO/2019/RIC/023,yes,Syova seeds; FICA; Savana Seeds; Grow More Seeds,NaCRRI breeder seed; NARO Holdings foundation seed; Doho Irrigation Scheme producers; Olweny rice farmers

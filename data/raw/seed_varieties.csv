@@ -1,8 +1,9 @@
 variety_id,variety_name,crop,maturity_days,drought_tolerance,disease_resistance,yield_potential_t_ha,min_rainfall_mm,max_rainfall_mm,min_altitude_m,max_altitude_m,input_requirement,notes
-v001,Longe 5,maize,120,medium,medium,4.2,700,1200,900,1800,medium,Open pollinated variety with broad adaptation
-v002,Longe 10H,maize,115,high,high,5.8,650,1150,900,1700,high,Hybrid with good drought tolerance
-v003,Longe 7H,maize,130,medium,high,6.0,800,1300,1000,1900,high,Hybrid suited to higher rainfall zones
-v004,NARO Maize 57,maize,105,high,medium,4.8,550,1050,800,1600,medium,Early maturing and drought tolerant
-v005,MM3,maize,95,high,low,3.7,500,950,700,1500,low,Early maturing option for short rainfall windows
-v006,H520,maize,140,low,high,6.5,900,1500,1200,2200,high,Performs best in high-potential cooler zones
-
+NARO/2019/BEN/037,NAROBEAN 6,beans,70.0,high,high,2.95,371.2,1136.3,1000,1500,low,"Best suited for low-mid altitude areas (1000-1500 masl), such as Lake Victoria Crescent Tolerant to Anthracnose, BCMV, Angular leaf spot (ALS), rust, and most other diseases"
+NARO/2019/BEN/038,NAROBEAN 7,beans,70.5,high,high,2.7,371.2,1136.3,1200,1700,low,"Best suited for low-mid altitude areas (1200-1700 masl); preferred in Northern Uganda (West Nile and Mid-Northern) Tolerant to Anthracnose, BCMV, rust, ALS and most other diseases"
+NARO/2019/GNT/022,NARONUT 1R,groundnuts,77.5,high,high,2.0,370.66,1112.0,700,2200,low,Best in semi-arid areas and cattle corridors of Uganda Resistant to groundnut rosette virus
+NARO/2019/GNT/023,NARONUT 2T,groundnuts,82.5,high,high,2.0,370.66,1112.0,700,2200,low,Best in West Nile and Mid-Northern agro-ecological zones Resistant to groundnut rosette virus
+NARO/2019/MAZ/041,UH5961 (NAROMAIZE 61),maize,125.0,high,high,8.0,371.41,1135.35,1200,1700,high,"Mid-altitude drought-tolerant maize (1200-1700 masl) Tolerant to GLS, Turcicum, common rust and Maize Streak Virus (MSV)"
+NARO/2019/MAZ/042,UH5962 (NAROMAIZE 62),maize,125.0,high,high,8.0,371.41,1135.35,1200,1700,high,"Mid-altitude (1200-1700 masl); drought tolerant Tolerant to GLS, Turcicum, common rust and Maize Streak Virus (MSV)"
+NARO/2019/RIC/022,Arize-1,rice,115.0,medium,high,7.9,425.47,1218.47,1200,1700,high,"Low-mid altitude areas (1200-1700 masl); rain-fed lowland and irrigated areas; hybrid rice Tolerant to Rice Yellow Mottle Virus, Rice Blast and Bacterial Leaf Streak"
+NARO/2019/RIC/023,Chinuga-1,rice,115.0,medium,high,9.6,425.47,1218.47,0,1200,high,"Rain-fed lowland (below 1200 masl) and irrigated areas; more production per unit area compared to Arize Resistant to Rice Yellow Mottle Virus, Rice Blast and Bacterial Leaf Streak"

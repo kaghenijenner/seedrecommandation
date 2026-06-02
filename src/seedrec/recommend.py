@@ -7,7 +7,20 @@ from .explain import agronomic_drivers, explanation_sentence
 from .model import predict_suitability
 
 
-def rank_recommendations(pipe, modelling_df: pd.DataFrame, case_id: str, top_k: int = 5) -> pd.DataFrame:
+def recommendation_table_columns(show_scoring: bool = False) -> list[str]:
+    if show_scoring:
+        return [
+            "rank",
+            "variety_name",
+            "model_probability",
+            "availability_penalty",
+            "recommendation_score",
+            "available",
+        ]
+    return ["rank", "variety_name"]
+
+
+def rank_recommendations(pipe, modelling_df: pd.DataFrame, case_id: str, top_k: int = 5, min_threshold: float | None = None, **kwargs) -> pd.DataFrame:
     case_rows = modelling_df[modelling_df["case_id"].eq(case_id)].copy()
     if case_rows.empty:
         raise ValueError(f"No rows found for case_id={case_id}")
@@ -15,6 +28,36 @@ def rank_recommendations(pipe, modelling_df: pd.DataFrame, case_id: str, top_k: 
     case_rows["model_probability"] = predict_suitability(pipe, case_rows)
     case_rows["availability_penalty"] = case_rows["available"].map({"yes": 0.0, "unknown": 0.05, "no": 0.12}).fillna(0.05)
     case_rows["recommendation_score"] = (case_rows["model_probability"] - case_rows["availability_penalty"]).clip(0, 1)
+    if min_threshold is None:
+        from .config import MIN_RECOMMENDATION_THRESHOLD
+
+        min_threshold = float(MIN_RECOMMENDATION_THRESHOLD)
+
+    case_rows = case_rows[case_rows["recommendation_score"] > float(min_threshold)].copy()
+    if case_rows.empty:
+        return pd.DataFrame(
+            columns=[
+                "case_id",
+                "district",
+                "season",
+                "crop",
+                "rank",
+                "variety_name",
+                "model_probability",
+                "availability_penalty",
+                "recommendation_score",
+                "suitability_score",
+                "suitability_class",
+                "available",
+                "supplier",
+                "availability_note",
+                "data_confidence",
+                "positive_drivers",
+                "cautionary_drivers",
+                "explanation",
+            ]
+        )
+
     case_rows = case_rows.sort_values(["recommendation_score", "suitability_score"], ascending=False).reset_index(drop=True)
     case_rows["rank"] = range(1, len(case_rows) + 1)
 
@@ -31,6 +74,8 @@ def rank_recommendations(pipe, modelling_df: pd.DataFrame, case_id: str, top_k: 
         "crop",
         "rank",
         "variety_name",
+        "model_probability",
+        "availability_penalty",
         "recommendation_score",
         "suitability_score",
         "suitability_class",
@@ -45,18 +90,28 @@ def rank_recommendations(pipe, modelling_df: pd.DataFrame, case_id: str, top_k: 
     return case_rows[columns].head(top_k)
 
 
-def build_case_from_inputs(modelling_df: pd.DataFrame, district: str, season: str, input_access: str, production_goal: str, resource_level: str) -> str:
-    matching = modelling_df[
-        modelling_df["district"].eq(district)
-        & modelling_df["season"].eq(season)
-        & modelling_df["input_access"].eq(input_access)
-        & modelling_df["production_goal"].eq(production_goal)
-        & modelling_df["resource_level"].eq(resource_level)
+def build_case_from_inputs(
+    modelling_df: pd.DataFrame,
+    district: str,
+    season: str,
+    input_access: str,
+    production_goal: str,
+    resource_level: str,
+    crop: str | None = None,
+) -> str:
+    source = modelling_df
+    if crop is not None:
+        source = source[source["crop"].eq(crop)]
+    matching = source[
+        source["district"].eq(district)
+        & source["season"].eq(season)
+        & source["input_access"].eq(input_access)
+        & source["production_goal"].eq(production_goal)
+        & source["resource_level"].eq(resource_level)
     ]
     if not matching.empty:
         return str(matching.iloc[0]["case_id"])
-    district_cases = modelling_df[modelling_df["district"].eq(district)]
+    district_cases = source[source["district"].eq(district)]
     if district_cases.empty:
-        raise ValueError(f"No demo case is available for district={district}")
+        raise ValueError(f"No recommendation case is available for district={district}")
     return str(district_cases.iloc[0]["case_id"])
-
