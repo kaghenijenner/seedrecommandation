@@ -358,7 +358,12 @@ def prepare_real_raw_files(
         .merge(isda_enrichment_by_district, on="district", how="left")
     )
     rainfall = location_base["season_rainfall_total_mm"]
-    drought_index = (1 - (rainfall - rainfall.min()) / (rainfall.max() - rainfall.min())).clip(0, 1)
+    rainfall_range = rainfall.max() - rainfall.min()
+    if rainfall_range and not pd.isna(rainfall_range):
+        drought_index = (1 - (rainfall - rainfall.min()) / rainfall_range).clip(0, 1)
+    else:
+        drought_index = pd.Series(0.5, index=location_base.index)
+        
     locations = pd.DataFrame(
         {
             "district": location_base["district"],

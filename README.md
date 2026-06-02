@@ -60,7 +60,3 @@ Running the pipeline creates:
 - Detailed scoring, confidence, drivers, cautions, and availability notes appear in the explanation section for each variety.
 - The evaluation covers predictive performance, ranking quality, and explanation plausibility.
 - The implementation can be demonstrated with verified Uganda district/crop data while clearly documenting missing variety-level trial outcomes.
-
-## Data Status
-
-The synthetic demo data has been replaced with transformed real inputs from the `datasets` folder. See `docs/REAL_DATA_INTEGRATION.md` for selected files, limitations, and missing data sources.

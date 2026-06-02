@@ -18,7 +18,6 @@
 - [x] Add demo remote-sensing indicator data.
 - [x] Add demo farmer-context data.
 - [x] Add demo seed availability data.
-- [x] Record selected source files, coverage, and limitations in `docs/REAL_DATA_INTEGRATION.md`.
 
 ## Stage 3: Data Preparation
 

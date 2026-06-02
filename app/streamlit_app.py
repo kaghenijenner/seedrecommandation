@@ -19,14 +19,7 @@ from seedrec.model import load_model, save_model, train_best_model
 from seedrec.recommend import build_case_from_inputs, rank_recommendations, recommendation_table_columns
 from seedrec.seasons import current_season_phase, latest_season_code_for_phase, season_phase_options
 
-
 st.set_page_config(page_title="Seed Variety Recommender", layout="wide")
-
-if os.getenv("GEMINI_API_KEY"):
-    st.sidebar.success("Gemini explanations are enabled")
-else:
-    st.sidebar.info("Set GEMINI_API_KEY to enable Gemini explanations")
-
 
 @st.cache_data
 def load_dataset() -> pd.DataFrame:
@@ -64,6 +57,10 @@ with st.sidebar:
     default_phase = current_season_phase()
     season_phase = st.selectbox("Season phase", season_choices, index=season_choices.index(default_phase) if default_phase in season_choices else 0)
     season = latest_season_code_for_phase(district_df, season_phase)
+    if season is None:
+        st.warning(f"No historical data available for {season_phase} in {district}. Please select a different phase.")
+        st.stop()
+
     input_access = st.selectbox("Input access", sorted(district_df["input_access"].dropna().unique()))
     production_goal = st.selectbox("Production goal", sorted(district_df["production_goal"].dropna().unique()))
     resource_level = st.selectbox("Resource level", sorted(district_df["resource_level"].dropna().unique()))
@@ -72,7 +69,6 @@ with st.sidebar:
     min_threshold_default = float(getattr(config, "MIN_RECOMMENDATION_THRESHOLD", 0.0))
     min_threshold = st.slider("Minimum recommendation score", 0.0, 1.0, min_threshold_default, 0.01)
 
-    st.caption(f"Current calendar phase defaults to {default_phase}; using the latest available historical record for {season_phase}.")
 
 case_id = build_case_from_inputs(df, district, season, input_access, production_goal, resource_level, crop=crop)
 recommendations = rank_recommendations(pipe, df, case_id, top_k=top_k, min_threshold=min_threshold)
