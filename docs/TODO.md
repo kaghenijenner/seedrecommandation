@@ -8,7 +8,7 @@
 - [x] Define the unit of analysis.
 - [x] Create initial data dictionary.
 - [x] List required datasets and possible sources.
-- [ ] Replace demo data with verified real datasets.
+- [x] Replace demo data with verified real datasets from `datasets`.
 
 ## Stage 2: Data Collection
 
@@ -18,7 +18,7 @@
 - [x] Add demo remote-sensing indicator data.
 - [x] Add demo farmer-context data.
 - [x] Add demo seed availability data.
-- [ ] Record final source, date, license, coverage, and limitations for each real dataset.
+- [x] Record selected source files, coverage, and limitations in `docs/REAL_DATA_INTEGRATION.md`.
 
 ## Stage 3: Data Preparation
 
@@ -27,7 +27,12 @@
 - [x] Create synthetic suitability labels and scores.
 - [x] Create data confidence indicators.
 - [x] Save processed dataset versions through the pipeline.
-- [ ] Add real-data quality report once final datasets are obtained.
+- [x] Add real-data integration report for the current verified bundle.
+- [x] Integrate district NDVI coverage from `missingdatasets`.
+- [x] Integrate UNPS district-level resource/context proxies from `missingdatasets`.
+- [x] Integrate available climate/weather coverage from `missingdatasets/uganda_climate_data.csv`.
+- [ ] Populate usable numeric values in `missingdatasets/uganda_soilgrids_data.csv` or fetch SoilGrids values again.
+- [ ] Add final quality report once variety-level outcome data is obtained.
 
 ## Stage 4: Modelling
 
@@ -61,6 +66,7 @@
 - [x] Add ranking metrics.
 - [x] Add grouped agro-ecological/resource summary.
 - [ ] Add robustness checks across seasons when multi-season data is available.
+- [ ] Decode UNPS agricultural plot/crop/input files into clean farmer-level modelling features.
 - [ ] Conduct stakeholder review.
 - [ ] Document final limitations.
 
@@ -82,4 +88,3 @@
 - [ ] Prepare dissertation result tables and figures.
 - [ ] Prepare final presentation slides.
 - [ ] Archive final code, data versions, model files, and reports.
-
