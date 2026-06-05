@@ -5,8 +5,8 @@ __pycache__/
 .streamlit/secrets.toml
 .env
 .env.*
-models/*.joblib
-models/*.pkl
+# models/*.joblib
+# models/*.pkl
 reports/*.png
 reports/*.html
 data/processed/*.csv
