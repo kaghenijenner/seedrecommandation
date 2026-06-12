@@ -6,9 +6,9 @@ Explanations are layered (proposal sec. 2.6.3): a plain-language line for farmer
 
 - District: Kalangala
 - Crop: beans
-- Variety: NAROBEAN 6
-- Recommendation score: 0.999
-- Model probability: 0.999
+- Variety: NAROBEAN 7
+- Recommendation score: 1.000
+- Model probability: 1.000
 - Data confidence: high
 
 ### 1. Plain-language (farmer)
@@ -19,29 +19,29 @@ This variety suits your farm because the elevation is within the variety adaptat
 
 - Positive drivers: the elevation is within the variety adaptation range | the maturity period fits the season length | drought tolerance is useful for the local drought risk | disease resistance strengthens suitability
 - Cautions: rainfall is outside the preferred variety range
-- Seed availability: 1 licensed seed company(ies) listed nationally
+- Seed availability: 3 licensed seed company(ies) listed nationally
 
 ### 3. Technical (SHAP / LIME)
 
 SHAP local contributions (feature: signed contribution to suitability):
 
-- mean rainfall mm: +1.751
-- rainfall range distance mm: +1.573
-- soil ph: +0.748
-- drought index: +0.710
-- organic matter pct: +0.660
-- market preference low: +0.605
+- mean rainfall mm: +3.343
+- rainfall range distance mm: +2.322
+- organic matter pct: +1.048
+- soil ph: +0.969
+- market preference low: +0.779
+- input level gap: +0.756
 
 LIME local explanation (reason: weight toward suitability):
 
-- organic matter pct > 35.69: +0.130
-- market preference=low: +0.101
-- soil ph <= 5.93: +0.083
-- mean rainfall mm > 846.16: +0.048
-- season=2009 First: -0.038
-- drought x index <= 1.48: +0.030
-- zardi zone=Central: -0.025
-- soil type=acidic loam: +0.024
+- market preference=low: +0.166
+- organic matter pct > 35.69: +0.163
+- mean rainfall mm > 846.16: +0.127
+- soil ph <= 5.93: +0.055
+- drainage=moderate: +0.047
+- drought x index <= 1.48: +0.035
+- disease resistance=high: -0.027
+- soil type=acidic loam: +0.021
 
 ## Global drivers
 
