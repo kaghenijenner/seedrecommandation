@@ -80,7 +80,6 @@ rpds-py==2026.5.1
 scikit-image==0.26.0
 scikit-learn==1.9.0
 scipy==1.18.0
--e git+https://github.com/kaghenijenner/seedrecommandation.git@a74f5c5ab4b895aed5c75cde917b4f3e9f7f72d2#egg=seedrec
 shap==0.52.0
 shapely==2.1.2
 six==1.17.0
