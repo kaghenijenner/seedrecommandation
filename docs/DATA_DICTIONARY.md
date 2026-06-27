@@ -41,6 +41,9 @@ The current implementation uses verified Uganda district/crop data, NARO candida
 | `disease_resistance` | Variety trait | Low, medium, or high disease resistance. |
 | `yield_potential_t_ha` | Variety trait | Yield potential in tonnes per hectare. |
 | `input_requirement` | Variety trait | Low, medium, or high input requirement. |
+| `release_year` | Variety trait | Variety release year parsed from the NVIN (real per-variety signal). |
+| `licensed_company_count` | Seed market | Number of companies licensed to sell the variety (real per-variety signal). |
+| `trait_source` | Governance | `measured` (NARO compendium traits) or `imputed` (crop-level proxy traits). |
 | `input_access` | Farmer context | Farmer access to seed, fertilizer, chemicals, and advisory inputs. |
 | `production_goal` | Farmer context | Food security, market, or mixed goal. |
 | `resource_level` | Farmer context | Overall resource profile. |
@@ -51,4 +54,4 @@ The current implementation uses verified Uganda district/crop data, NARO candida
 | `available` | Seed market | Whether seed availability/licensing information is present. |
 | `suitability_score` | Label | Suitability proxy score from observed yield percentile plus agronomic compatibility. |
 | `suitability_class` | Label | Unsuitable, moderately suitable, or suitable. |
-| `data_confidence` | Governance | High or medium confidence flag based on missing/uncertain fields. |
+| `data_confidence` | Governance | High / medium / low confidence: measured-trait varieties with complete core data are high; imputed-trait varieties are medium; missing core data or unconfirmed availability is low. |

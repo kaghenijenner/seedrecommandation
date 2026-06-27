@@ -6,6 +6,10 @@ from functools import lru_cache
 
 import numpy as np
 import pandas as pd
+from pandas.api.types import is_numeric_dtype
+
+from .config import RANDOM_SEED
+from .data import feature_columns
 
 
 POSITIVE_TEMPLATES = {
@@ -32,9 +36,9 @@ CAUTION_TEMPLATES = {
 
 def _fallback_explanation_sentence(row: pd.Series) -> str:
     drivers, cautions = agronomic_drivers(row)
-    driver_text = "; ".join(drivers) if drivers else "available data gives moderate support for this variety"
-    caution_text = "; ".join(cautions) if cautions else "no major caution was detected in the demo data"
-    return f"Recommended because {driver_text}. Caution: {caution_text}."
+    driver_text = "; ".join(drivers) if drivers else "the available data gives moderate support for this variety"
+    caution_text = "; ".join(cautions) if cautions else "no major concern was found for your conditions"
+    return f"This variety suits your farm because {driver_text}. Things to watch: {caution_text}."
 
 
 def _row_signature(row: pd.Series, model_probability: float | None = None) -> tuple:
@@ -72,6 +76,11 @@ def _json_safe(value):
     if pd.isna(value):
         return None
     return value
+
+
+def _gemini_enabled() -> bool:
+    """LLM text is opt-in so bulk pipeline/eval stay fast and offline by default."""
+    return os.getenv("SEEDREC_USE_GEMINI", "").strip().lower() in {"1", "true", "yes", "on"}
 
 
 def _gemini_model_candidates() -> list[str]:
@@ -205,31 +214,97 @@ def agronomic_drivers(row: pd.Series) -> tuple[list[str], list[str]]:
 
 
 def explanation_sentence(row: pd.Series) -> str:
-    gemini_text = gemini_explanation(row, row.get("model_probability"))
-    if gemini_text:
-        return gemini_text
+    if _gemini_enabled():
+        gemini_text = gemini_explanation(row, row.get("model_probability"))
+        if gemini_text:
+            return gemini_text
     return _fallback_explanation_sentence(row)
+
+
+def _pretty_feature(name: str) -> str:
+    return str(name).split("__", 1)[-1].replace("_", " ").strip()
+
+
+def _underlying_model(model):
+    """Return the base tree estimator, unwrapping CalibratedClassifierCV if present."""
+    if hasattr(model, "calibrated_classifiers_") and model.calibrated_classifiers_:
+        calibrated = model.calibrated_classifiers_[0]
+        return getattr(calibrated, "estimator", getattr(calibrated, "base_estimator", model))
+    return model
+
+
+def _positive_class_shap(values) -> np.ndarray:
+    values = values[-1] if isinstance(values, list) else np.asarray(values)
+    values = np.asarray(values)
+    if values.ndim == 3:  # (samples, features, classes)
+        values = values[..., -1]
+    return values
 
 
 def shap_summary(pipe, rows: pd.DataFrame) -> pd.DataFrame:
     try:
         import shap
 
-        transformed = pipe.named_steps["preprocess"].transform(rows)
-        model = pipe.named_steps["model"]
+        pre = pipe.named_steps["preprocess"]
+        model = _underlying_model(pipe.named_steps["model"])
+        transformed = pre.transform(rows)
+        if hasattr(transformed, "toarray"):
+            transformed = transformed.toarray()
         explainer = shap.TreeExplainer(model)
-        values = explainer.shap_values(transformed)
-        if isinstance(values, list):
-            values = values[-1]
-        names = pipe.named_steps["preprocess"].get_feature_names_out()
+        values = _positive_class_shap(explainer.shap_values(transformed))
+        names = pre.get_feature_names_out()
         importance = np.abs(values).mean(axis=0)
         return pd.DataFrame({"feature": names, "mean_abs_shap": importance}).sort_values("mean_abs_shap", ascending=False)
     except Exception:
         return fallback_feature_importance(pipe)
 
 
+def local_shap_contributions(pipe, feature_rows: pd.DataFrame, top_n: int = 6):
+    """Signed SHAP contributions for each row (technical explanation layer, sec. 2.6.3)."""
+    try:
+        import shap
+
+        pre = pipe.named_steps["preprocess"]
+        model = _underlying_model(pipe.named_steps["model"])
+        transformed = pre.transform(feature_rows[feature_columns()])
+        if hasattr(transformed, "toarray"):
+            transformed = transformed.toarray()
+        explainer = shap.TreeExplainer(model)
+        values = _positive_class_shap(explainer.shap_values(transformed))
+        names = [_pretty_feature(n) for n in pre.get_feature_names_out()]
+        out = []
+        for i in range(values.shape[0]):
+            contrib = sorted(zip(names, values[i].tolist()), key=lambda t: abs(t[1]), reverse=True)
+            out.append(contrib[:top_n])
+        return out
+    except Exception:
+        return None
+
+
+def save_shap_summary_figure(pipe, rows: pd.DataFrame, path) -> bool:
+    try:
+        import matplotlib
+
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+
+        summary = shap_summary(pipe, rows).head(15)
+        col = "mean_abs_shap" if "mean_abs_shap" in summary.columns else "importance"
+        labels = summary["feature"].map(_pretty_feature).tolist()[::-1]
+        fig, ax = plt.subplots(figsize=(7.5, 5.5))
+        ax.barh(labels, summary[col].tolist()[::-1], color="#2e7d32")
+        ax.set_xlabel("Mean |SHAP| (global feature importance)")
+        ax.set_title("What drives seed-variety suitability across all cases")
+        fig.tight_layout()
+        fig.savefig(path, dpi=120)
+        plt.close(fig)
+        return True
+    except Exception:
+        return False
+
+
 def fallback_feature_importance(pipe) -> pd.DataFrame:
-    model = pipe.named_steps["model"]
+    model = _underlying_model(pipe.named_steps["model"])
     names = pipe.named_steps["preprocess"].get_feature_names_out()
     if hasattr(model, "feature_importances_"):
         values = model.feature_importances_
@@ -238,4 +313,114 @@ def fallback_feature_importance(pipe) -> pd.DataFrame:
     else:
         values = np.zeros(len(names))
     return pd.DataFrame({"feature": names, "importance": values}).sort_values("importance", ascending=False)
+
+
+# --- LIME local explanations (proposal sec. 2.6.2, 3.8.1) ---
+
+_LIME_CACHE: dict = {}
+
+
+def _lime_components(modelling_df: pd.DataFrame):
+    feats = feature_columns()
+    encoded = np.zeros((len(modelling_df), len(feats)), dtype=float)
+    cat_flags = [False] * len(feats)
+    cat_names: dict[int, list[str]] = {}
+    for i, col in enumerate(feats):
+        series = modelling_df[col]
+        if is_numeric_dtype(series):
+            numeric = pd.to_numeric(series, errors="coerce")
+            median = numeric.median()
+            fill = 0.0 if pd.isna(median) else median
+            encoded[:, i] = numeric.fillna(fill).to_numpy(dtype=float)
+        else:
+            cats = series.astype(str).fillna("unknown")
+            uniques = sorted(cats.unique())
+            encoded[:, i] = cats.map({value: index for index, value in enumerate(uniques)}).to_numpy(dtype=float)
+            cat_flags[i] = True
+            cat_names[i] = uniques
+
+    # LIME needs discretized perturbations to move a tree model off its locally-constant leaf.
+    # Its quartile discretizer fails on constant or sparsely-populated numeric columns, so we
+    # explain only well-spread features (and all categoricals); the rest are held at their
+    # observed value as fixed context.
+    usable = []
+    for i in range(len(feats)):
+        if cat_flags[i]:
+            usable.append(i)
+            continue
+        column = encoded[:, i]
+        if np.unique(column).size >= 10 and pd.Series(column).value_counts(normalize=True).iloc[0] < 0.6:
+            usable.append(i)
+    return feats, encoded, cat_flags, cat_names, usable
+
+
+def _lime_explainer(modelling_df: pd.DataFrame):
+    key = (tuple(feature_columns()), len(modelling_df))
+    if key in _LIME_CACHE:
+        return _LIME_CACHE[key]
+    from lime.lime_tabular import LimeTabularExplainer
+
+    feats, encoded, cat_flags, cat_names, usable = _lime_components(modelling_df)
+    sub_feats = [feats[i] for i in usable]
+    sub_cat_idx = [pos for pos, i in enumerate(usable) if cat_flags[i]]
+    sub_cat_names = {pos: cat_names[usable[pos]] for pos in sub_cat_idx}
+    explainer = LimeTabularExplainer(
+        training_data=encoded[:, usable],
+        feature_names=sub_feats,
+        categorical_features=sub_cat_idx,
+        categorical_names=sub_cat_names,
+        class_names=["not suitable", "suitable"],
+        mode="classification",
+        discretize_continuous=True,
+        random_state=RANDOM_SEED,
+    )
+    _LIME_CACHE[key] = (explainer, feats, cat_flags, cat_names, usable)
+    return _LIME_CACHE[key]
+
+
+def lime_explanation(pipe, modelling_df: pd.DataFrame, feature_row: pd.Series, num_features: int = 8):
+    """Return [(reason, weight)] for one recommendation, or None if LIME is unavailable."""
+    try:
+        explainer, feats, cat_flags, cat_names, usable = _lime_explainer(modelling_df)
+
+        full = np.zeros(len(feats), dtype=float)
+        for i, col in enumerate(feats):
+            value = feature_row.get(col)
+            if cat_flags[i]:
+                uniques = cat_names[i]
+                text = str(value)
+                full[i] = float(uniques.index(text)) if text in uniques else 0.0
+            else:
+                full[i] = float(value) if pd.notna(value) else 0.0
+
+        def predict_fn(array: np.ndarray) -> np.ndarray:
+            matrix = np.tile(full, (array.shape[0], 1))
+            matrix[:, usable] = array
+            frame = pd.DataFrame(matrix, columns=feats)
+            for i in range(len(feats)):
+                if cat_flags[i]:
+                    uniques = cat_names[i]
+                    idxs = np.clip(np.round(frame.iloc[:, i].to_numpy()).astype(int), 0, len(uniques) - 1)
+                    frame[feats[i]] = [uniques[k] for k in idxs]
+            return pipe.predict_proba(frame)
+
+        explanation = explainer.explain_instance(full[usable], predict_fn, num_features=num_features, labels=(1,))
+        items = [(_pretty_feature(text), float(weight)) for text, weight in explanation.as_list(label=1)]
+        meaningful = [(text, weight) for text, weight in items if abs(weight) > 1e-6]
+        return meaningful or items
+    except Exception:
+        return None
+
+
+def technical_explanation(pipe, modelling_df: pd.DataFrame, case_id, variety_id, with_lime: bool = False) -> dict:
+    """SHAP (and optionally LIME) contributions for one recommended variety."""
+    match = modelling_df[(modelling_df["case_id"].eq(case_id)) & (modelling_df["variety_id"].eq(variety_id))]
+    if match.empty:
+        return {"shap": None, "lime": None}
+    feature_row = match.iloc[[0]]
+    shap_local = local_shap_contributions(pipe, feature_row, top_n=6)
+    result = {"shap": shap_local[0] if shap_local else None, "lime": None}
+    if with_lime:
+        result["lime"] = lime_explanation(pipe, modelling_df, feature_row.iloc[0])
+    return result
 

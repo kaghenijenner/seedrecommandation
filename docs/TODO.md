@@ -40,7 +40,8 @@
 - [x] Implement optional XGBoost candidate model.
 - [x] Compare models using grouped validation.
 - [x] Save trained model and preprocessing pipeline.
-- [ ] Tune hyperparameters on final dataset.
+- [x] Tune hyperparameters on final dataset (RandomizedSearchCV for XGBoost; composite model selection).
+- [x] Assess and conditionally apply probability calibration (Brier-based).
 
 ## Stage 5: Recommendation Logic
 
@@ -56,7 +57,8 @@
 - [x] Add agronomic text explanations.
 - [x] Add SHAP summary hook with fallback feature importance.
 - [x] Add local positive and cautionary drivers.
-- [ ] Add LIME report generation after dependencies are installed and final data is available.
+- [x] Add LIME local explanations (with graceful fallback) and layered farmer/extension/technical explanations.
+- [x] Add global SHAP summary figure and per-recommendation local SHAP contributions.
 - [ ] Conduct expert plausibility review.
 
 ## Stage 7: Evaluation
@@ -64,7 +66,9 @@
 - [x] Add predictive evaluation metrics.
 - [x] Add ranking metrics.
 - [x] Add grouped agro-ecological/resource summary.
-- [ ] Add robustness checks across seasons when multi-season data is available.
+- [x] Add spatial/temporal validation (leave-zone-out, leave-district-out, hold-out-season).
+- [x] Add ranking metrics at k=3 and k=5 with MRR and graded-relevance nDCG.
+- [x] Add fairness-style ranking splits by resource level and agro-ecological zone.
 - [ ] Decode UNPS agricultural plot/crop/input files into clean farmer-level modelling features.
 - [ ] Conduct stakeholder review.
 - [ ] Document final limitations.

@@ -2,7 +2,7 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-.streamlit/
+.streamlit/secrets.toml
 .env
 .env.*
 models/*.joblib
@@ -14,3 +14,5 @@ data/processed/*.csv
 datasets/
 docs/EXPLANATION.md
 docs/REAL_DATA_INTEGRATION.md
+docs/INSTRUCTION.md
+docs/COMPLETION.md

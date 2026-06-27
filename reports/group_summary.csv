@@ -1,16 +1,16 @@
 agro_ecological_zone,resource_level,cases,rows,suitable_rate,mean_suitability
-Eastern and Mt Elgon farming systems,high,13,26,0.38461538461538464,70.47
-Eastern and Mt Elgon farming systems,low,52,104,0.4230769230769231,66.0125
-Eastern and Mt Elgon farming systems,medium,85,170,0.38823529411764707,69.87729411764705
-Eastern and Mt Elgon farming systems,unknown,28,56,0.25,62.61142857142857
-Lake Victoria Crescent and Central Uganda,high,50,100,0.32,64.9307
-Lake Victoria Crescent and Central Uganda,medium,39,78,0.3076923076923077,63.51384615384615
-Lake Victoria Crescent and Central Uganda,unknown,12,24,0.5,70.16916666666667
-Northern Uganda farming systems,high,8,16,0.5,73.415
-Northern Uganda farming systems,low,24,48,0.4166666666666667,68.17333333333333
-Northern Uganda farming systems,medium,116,232,0.3448275862068966,64.75275862068965
-Northern Uganda farming systems,unknown,8,16,0.125,69.13125
-Western and South Western Highlands,high,6,12,0.16666666666666666,62.77166666666667
-Western and South Western Highlands,low,4,8,0.75,76.775
-Western and South Western Highlands,medium,104,208,0.5384615384615384,73.89057692307692
-Western and South Western Highlands,unknown,14,28,0.5714285714285714,74.59142857142857
+Eastern and Mt Elgon farming systems,high,13,195,0.441025641025641,72.17333333333333
+Eastern and Mt Elgon farming systems,low,52,746,0.3780160857908847,64.0657908847185
+Eastern and Mt Elgon farming systems,medium,85,1221,0.4062244062244062,70.40675675675675
+Eastern and Mt Elgon farming systems,unknown,28,412,0.25,61.74990291262136
+Lake Victoria Crescent and Central Uganda,high,50,758,0.3232189973614776,64.99678100263851
+Lake Victoria Crescent and Central Uganda,medium,39,576,0.3194444444444444,64.3892361111111
+Lake Victoria Crescent and Central Uganda,unknown,12,184,0.47282608695652173,69.5845652173913
+Northern Uganda farming systems,high,8,114,0.543859649122807,73.71122807017544
+Northern Uganda farming systems,low,24,368,0.3804347826086957,64.79385869565218
+Northern Uganda farming systems,medium,116,1666,0.33313325330132054,64.15928571428572
+Northern Uganda farming systems,unknown,8,114,0.13157894736842105,68.26736842105264
+Western and South Western Highlands,high,6,92,0.11956521739130435,61.364782608695656
+Western and South Western Highlands,low,4,70,0.7142857142857143,76.38428571428571
+Western and South Western Highlands,medium,104,1534,0.530638852672751,73.64533898305085
+Western and South Western Highlands,unknown,14,206,0.5485436893203883,74.88004854368933

@@ -135,15 +135,17 @@ def build_modelling_dataset(
     rows["food_security_goal"] = (rows["production_goal"] == "food_security").astype(int)
     rows["poor_drainage_sandy_penalty"] = ((rows["drainage"] == "poor") & rows["soil_type"].isin({"sandy", "sandy_loam"})).astype(int)
 
-    weak_fields = [
-        "mean_rainfall_mm",
-        "soil_ph",
-        "organic_matter_pct",
-        "ndvi",
-        "available",
-    ]
-    rows["data_confidence"] = np.where(rows[weak_fields].isna().any(axis=1), "medium", "high")
-    rows.loc[rows["available"].eq("unknown"), "data_confidence"] = "medium"
+    # NDVI / iSDA enrichment layers are systematically absent here, so they should not
+    # penalise every recommendation. Confidence is driven by core agro-data completeness
+    # and whether the variety's traits were measured or imputed from crop averages.
+    core_fields = ["mean_rainfall_mm", "soil_ph", "organic_matter_pct"]
+    core_missing = rows[core_fields].isna().any(axis=1) | rows["available"].eq("unknown")
+    imputed_traits = rows.get("trait_source", pd.Series("measured", index=rows.index)).eq("imputed")
+    rows["data_confidence"] = np.select(
+        [core_missing, imputed_traits],
+        ["low", "medium"],
+        default="high",
+    )
     return rows
 
 
@@ -195,6 +197,8 @@ def feature_columns() -> list[str]:
         "drought_tolerance",
         "disease_resistance",
         "yield_potential_t_ha",
+        "release_year",
+        "licensed_company_count",
         "min_rainfall_mm",
         "max_rainfall_mm",
         "min_altitude_m",
